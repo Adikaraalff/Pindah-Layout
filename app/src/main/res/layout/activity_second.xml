@@ -22,6 +22,6 @@
         android:textStyle="bold"
         android:layout_below="@+id/tv_selamat_datang"
         android:layout_centerHorizontal="true"/>
-        
+
 
 </RelativeLayout>
