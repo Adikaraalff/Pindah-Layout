@@ -14,4 +14,13 @@
         android:layout_centerInParent="true"
         android:textSize="17dp"/>
 
+    <EditText
+        android:id="@+id/et_nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nama"
+        android:layout_above="@+id/btn_pindah"
+        android:layout_margin="6dp"/>
+
+
 </RelativeLayout>
