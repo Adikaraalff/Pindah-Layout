@@ -2,10 +2,12 @@ package com.if3b.pindah_layout;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.widget.TextView;
 
 public class SecondActivity extends AppCompatActivity {
-
+    TextView tvNama;
 
 
     @Override
@@ -13,5 +15,11 @@ public class SecondActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
         getSupportActionBar().setTitle("Layout B");
+
+        tvNama = findViewById(R.id.tv_nama);
+
+        Intent terima = getIntent();
+        String yNama = terima.getStringExtra("xNama");
+        tvNama.setText(yNama);
     }
 }
